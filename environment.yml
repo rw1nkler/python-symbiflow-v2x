@@ -2,7 +2,6 @@ name: v2x_base
 channels:
   - symbiflow
 dependencies:
-  - python==3.8
   - symbiflow-yosys
   - pip
   - pip:
