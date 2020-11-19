@@ -14,8 +14,8 @@ include *.txt
 
 recursive-include v2x *.py
 
-# Include the preparation script
-include prepareenv.sh
+include *.yml
+include Makefile
 
 # Docs
 recursive-include docs *.py
@@ -29,3 +29,14 @@ prune docs/env
 
 # Tests
 graft tests
+
+# Makeenv
+recursive-exclude third_party *.gitmodules
+recursive-exclude third_party *.md
+recursive-exclude third_party *.mk
+recursive-exclude third_party *.ps1
+recursive-exclude third_party *.py
+recursive-exclude third_party *.template
+recursive-exclude third_party *.txt
+recursive-exclude third_party *.yml
+recursive-exclude third_party Makefile
